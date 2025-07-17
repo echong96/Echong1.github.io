@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Generator</title>
+    <style>
+        body {
+            background-color: #f5f5dc; /* Light beige background */
+            font-family: 'Georgia', serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #letter {
+            display: none;
+            background-color: #d2b48c; /* Light brown color */
+            color: #3b2a1e; /* Darker brown for text */
+            padding: 20px;
+            border: 2px solid #8b4513; /* Saddle brown border */
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        #letter.show {
+            display: block;
+            transform: scale(1.05);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #8b4513; /* Saddle brown */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #a0522d; /* Sienna */
+        }
+    </style>
+</head>
+<body>
+
+    <button id="showLetterButton">Click me</button>
+
+    <div id="letter">
+        <p>Hi nicey AHAHAHAH so this is the surprise, inubrak atoy via Html, and html a coding platform po used to build games, website, social, etc. Di rabiik inubra, kunak ku kayak ubraen maysa oras ngem haan met, manga 12 ko nalpas di rabii atoyen, hoping nga magustuwam Atoy. 
+‎
+‎Thank you so much for always being there for me, nicey. Your presence in my life makes me feel incredibly special, cherished, and truly valued in ways I can’t fully put into words. You have this amazing way of making even the darkest days feel lighter, and I’m endlessly grateful for the comfort and strength you bring into my world.
+‎
+‎I want you to know how much I appreciate everything about you—the kindness you show, the patience you have, and the unwavering support you give me without hesitation. You inspire me every single day to grow, to heal, and to become the best version of myself—not just for me, but for us.
+‎
+‎While I may not usually make promises, I want to make one to you from the depths of my heart. I promise to remain strong and steadfast, to stand by you no matter what challenges come our way. I will continue to love you genuinely and wholeheartedly, through every up and down, through every joy and every hardship. You are my person, and I am so blessed to have you..</p>
+    </div>
+
+    <script>
+        document.getElementById('showLetterButton').onclick = function() {
+            document.getElementById('letter').classList.toggle('show');
+        };
+    </script>
+
+</body>
+</html>
